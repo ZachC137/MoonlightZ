@@ -52,7 +52,7 @@ Support the project by contributing to development, joining feature discussions,
 ### Built with
 
 Current v2:
-- [TailwindCSS]([https://getbootstrap.com/](https://tailwindcss.com/))
+- [TailwindCSS](https://tailwindcss.com/)
 - [Blazor Server Side](https://learn.microsoft.com/de-de/aspnet/core/blazor/hosting-models?view=aspnetcore-8.0)
 - [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
