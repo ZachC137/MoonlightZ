@@ -1,0 +1,22 @@
+﻿@using MoonCore.Abstractions
+@using Moonlight.Core.Database.Entities
+
+@inject Repository<User> UserRepository
+
+<a href="/admin/users">
+    <StatCard Value="@UserCount.ToString()" Description="Users" Icon="bxs-group"></StatCard>
+</a>
+
+@code {
+
+    public int UserCount;
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+
+        if (firstRender)
+            UserCount = UserRepository.Get().Count();
+        await InvokeAsync(StateHasChanged);
+    }
+}

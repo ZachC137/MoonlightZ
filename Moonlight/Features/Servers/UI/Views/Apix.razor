@@ -1,0 +1,25 @@
+﻿@inject NavigationManager MyNavigationManager
+
+@page "/apix"
+
+
+<h3>apix</h3>
+
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            Console.WriteLine(GetQueryParm("Foo")); //outputs a blank line
+        }
+
+    }
+
+    string GetQueryParm(string parmName)
+    {
+        var uriBuilder = new UriBuilder(MyNavigationManager.Uri);
+        var q = System.Web.HttpUtility.ParseQueryString(uriBuilder.Query);
+        return q[parmName] ?? "";
+    }
+}
