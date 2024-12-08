@@ -131,6 +131,21 @@
         );
     }
 
+    private async Task SuspendServer(Server server)
+    {
+        await AlertService.Confirm(
+            "Confirm Server Suspension",
+            "Do you really want to Suspend this Server?",
+            async () =>
+            {
+                await ServerService.Delete(server, safeDelete: false);
+                await ToastService.Success("Successfully Suspended the Server");
+
+                await Crud.SetState(FastCrudState.View);
+            }
+        );
+    }
+
     private IEnumerable<Server> Loader(Repository<Server> repository)
     {
         return repository
