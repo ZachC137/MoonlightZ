@@ -50,8 +50,8 @@ You can find exclusive previews in our discord server [https://discord.gg/TJaspT
 Support the project by contributing to development, joining feature discussions, or donating on my ko-fi page: [https://ko-fi.com/masuowo](https://ko-fi.com/masuowo)!
 
 ### Built with
-
-Current v2:
+> This is a debugged version of V2
+OLD Current v2:
 - [TailwindCSS](https://tailwindcss.com/)
 - [Blazor Server Side](https://learn.microsoft.com/de-de/aspnet/core/blazor/hosting-models?view=aspnetcore-8.0)
 - [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
