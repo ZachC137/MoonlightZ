@@ -13,14 +13,16 @@
     "Host": "10.10.10.65",
     "Port": 3306,
     "Username": "admin",
-    "Password": "",
+    "Password": "Regrexboi19@",
     "Database": "moonlight"
   },
   "AuthenticatedEndpoints": [
     "/api/admin/system/shutdown",
     "/api/admin/system/info",
     "/api/admin/system/serverlist",
-    "/api/admin/system/nodelist"
+    "/api/admin/system/nodelist",
+    "/api/admin/system/users/register",
+    "/api/admin/system/users/userslist"
   ],
   "ApiKeys": [
     "dkey"
