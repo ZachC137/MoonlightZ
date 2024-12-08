@@ -1,0 +1,68 @@
+{
+  "AppUrl": "http://0.0.0.0:80",
+  "Http": {
+    "HttpPort": 80,
+    "HttpsPort": 443,
+    "EnableSsl": false,
+    "CertPath": "cert.pem",
+    "KeyPath": "privkey.pem",
+    "UploadLimit": 10000,
+    "MessageSizeLimit": 102400
+  },
+  "Database": {
+    "Host": "10.10.10.65",
+    "Port": 3306,
+    "Username": "admin",
+    "Password": "",
+    "Database": "moonlight"
+  },
+  "AuthenticatedEndpoints": [
+    "/api/admin/system/shutdown",
+    "/api/admin/system/info",
+    "/api/admin/system/serverlist",
+    "/api/admin/system/nodelist"
+  ],
+  "ApiKeys": [
+    "dkey"
+  ],
+  "Features": {
+    "DisableFeatures": []
+  },
+  "Authentication": {
+    "UseDefaultAuthentication": true,
+    "TokenDuration": 300,
+    "DenyRegister": false,
+    "EnablePeriodicReAuth": false,
+    "PeriodicReAuthDelay": 5
+  },
+  "Customisation": {
+    "DisableTimeBasedGreetingMessages": false,
+    "GreetingTimezoneDifference": 2,
+    "FileManager": {
+      "MaxFileOpenSize": 512000,
+      "OperationTimeout": 5
+    },
+    "Footer": {
+      "CopyrightText": "ZHP",
+      "CopyrightLink": "https://zarc.dev",
+      "AboutLink": "https://zarc.dev",
+      "PrivacyLink": "https://zarc.dev",
+      "ImprintLink": "https://zarc.dev"
+    },
+    "CookieConsentBanner": {
+      "Enabled": false,
+      "BannerTitle": " Cookies",
+      "BannerText": "ZHP is using cookies , to personalize your experience.",
+      "ConsentText": "Consent",
+      "DeclineText": "Decline"
+    }
+  },
+  "Security": {
+    "Token": "PQu0DVUjBETRMH9nTmCYMBBDmA0nSkvr",
+    "DisableClientSideUnload": false,
+    "EnforceAvatarPrivacy": true
+  },
+  "Development": {
+    "EnableApiReference": false
+  }
+}

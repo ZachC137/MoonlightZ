@@ -397,7 +397,7 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-storage/
+
 .idea/.idea.Moonlight/.idea/dataSources.xml
 Moonlight/Assets/Core/css/theme.css
 Moonlight/Assets/Core/css/theme.css.map
